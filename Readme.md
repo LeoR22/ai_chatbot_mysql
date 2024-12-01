@@ -1,4 +1,4 @@
-#  Chatbot para consultas SQL con integración de Groq e Impala
+#  Chatbot para consultas SQL con integración de Groq y MySQL
 
 Bienvenido al Chat with Mysql, un chatbot potente basado en Streamlit que utiliza Groq y una clase auxiliar personalizada para generar y ejecutar consultas SQL en respuesta a entradas en lenguaje natural. Este proyecto está diseñado por los analiticos del area de integración buscando una forma intuitiva de interactuar con grandes conjuntos de datos usando un lenguaje simple y comprensible.
 
