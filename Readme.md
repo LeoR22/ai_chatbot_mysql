@@ -11,7 +11,7 @@ Bienvenido al Chat with Mysql, un chatbot potente basado en Streamlit que utiliz
 
 ## Arquitectura
 
-![chat-lz](docs/mysql_groq.png)
+![chat-mysql](docs/mysql_groq.png)
 
 
 - **1. Entrada del Usuario**: Acepta consultas en lenguaje natural a través de la interfaz de Streamlit.
@@ -20,6 +20,8 @@ Bienvenido al Chat with Mysql, un chatbot potente basado en Streamlit que utiliz
 - **4. Ejecución en la Base de Datos**: Las consultas se ejecutan en la base de datos Mysql mediante una clase auxiliar personalizada.
 - **5. Visualización de Resultados**: Los resultados se formatean como un DataFrame y se muestran en la GUI.
 
+### Ejemplo de funcionamiento:
+![chat-mysql](docs/chatbot.png)
 
 # Instalación
 
