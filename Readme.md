@@ -1,23 +1,23 @@
 #  Chatbot para consultas SQL con integración de Groq e Impala
 
-Bienvenido al Chat with the LZ Project, un chatbot potente basado en Streamlit que utiliza Groq y una clase auxiliar personalizada para generar y ejecutar consultas SQL en respuesta a entradas en lenguaje natural. Este proyecto está diseñado por los analiticos del area de integración buscando una forma intuitiva de interactuar con grandes conjuntos de datos usando un lenguaje simple y comprensible.
+Bienvenido al Chat with Mysql, un chatbot potente basado en Streamlit que utiliza Groq y una clase auxiliar personalizada para generar y ejecutar consultas SQL en respuesta a entradas en lenguaje natural. Este proyecto está diseñado por los analiticos del area de integración buscando una forma intuitiva de interactuar con grandes conjuntos de datos usando un lenguaje simple y comprensible.
 
 # Características
 - **Interacción en Lenguaje Natural**: Escribe tus consultas en lenguaje cotidiano y obtén respuestas basadas en SQL.
 - **Generación Dinámica de Consultas SQL**: Usa Groq para interpretar la intención del usuario y generar consultas SQL precisas.
-- **Integración con Bases de Datos**: Se conecta a una base de datos Impala para recuperar y mostrar resultados.
+- **Integración con Bases de Datos**: Se conecta a una base de datos mysql para recuperar y mostrar resultados.
 - **Interfaz Gráfica con Streamlit**: Una interfaz amigable que facilita la interacción tanto con Groq como con la base de datos.
 - **Conocimiento del Esquema**: Recupera y muestra dinámicamente los esquemas de tablas para mejorar la precisión de las consultas.
 
 ## Arquitectura
 
-![chat-lz](docs/chat_lz.png)
+![chat-lz](docs/mysql_groq.png)
 
 
 - **1. Entrada del Usuario**: Acepta consultas en lenguaje natural a través de la interfaz de Streamlit.
 - **2. Recuperación del Esquema**: Obtiene dinámicamente detalles de los esquemas de tablas para consultas basadas en contexto.
 - **3. Generación de Consultas**: Groq interpreta la entrada del usuario y genera la consulta SQL correspondiente.
-- **4. Ejecución en la Base de Datos**: Las consultas se ejecutan en la base de datos Impala mediante una clase auxiliar personalizada.
+- **4. Ejecución en la Base de Datos**: Las consultas se ejecutan en la base de datos Mysql mediante una clase auxiliar personalizada.
 - **5. Visualización de Resultados**: Los resultados se formatean como un DataFrame y se muestran en la GUI.
 
 
@@ -26,7 +26,7 @@ Bienvenido al Chat with the LZ Project, un chatbot potente basado en Streamlit q
 ### Clonar el proyecto
 
 ```
-https://github.com/lriveraBanco/chat-with-lz.git
+https://github.com/LeoR22/ai_chatbot_mysql.git
 ```
 
 ### Configuración el proyecto
@@ -34,7 +34,7 @@ https://github.com/lriveraBanco/chat-with-lz.git
 Seleccionar el proyecto : Moverse al directorio principal
 
 ```
-cd chat-with-lz
+cd ai_chatbot_mysql
 ```
 
 ### Crear entorno virtual
@@ -82,17 +82,17 @@ streamlit run app.py
 
 Escribe consultas en lenguaje natural, como:
 
-- **"Muestra los registros más recientes para la API X."**
+- **"Muestra los registros tiene la tabla X."**
 - **"¿Cuál es el esquema de la tabla Y?"**
-- **"Obtén el promedio de usuarios por API en los últimos tres meses."**
+- **"Obtén el promedio de usuarios  en los últimos tres meses."**
 
 El chatbot generará consultas SQL, las ejecutará y mostrará los resultados.
-Use the sidebar to initialize the connection to the proceso_apis database.
+
 
 **Estructura básica del proyecto:**
 
 ```plaintext
-chat-with-lz/
+ai_chatbot_mysql/
 │
 ├── docs/
 │   ├── arquitectura.png
@@ -106,12 +106,12 @@ chat-with-lz/
 ```
 
 ### Bibliotecas y Herramientas Clave
-- **Conexion LZ via ODBC**
+
 - **Python 3.9+**
 - **Streamlit**: GUI interactiva para consultas y visualización de resultados.
 - **Groq:** Motor de comprensión del lenguaje natural para generar consultas SQL.
 - **Pandas:** Procesamiento y formato de datos.
-- **Impala:** Backend de base de datos para ejecución SQL.
+- **Conexion MySQL:** Conexiona la base de datos para ejecución SQL.
 - **Dotenv:** Gestión de variables de entorno.
 
 ### Referencias
@@ -137,7 +137,7 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE
 
 ## Contacto
 
-Leandro Rivera: <lrivera@bancolombia.com.co>
+Leandro Rivera: <leo.232rivera@gmail.com>
 
 
 
